@@ -4,26 +4,11 @@ This project is a Virginia Tech CS 4094 Capstone project for ML for Healthcare. 
 
 The main workflow is contained in capstone_exploration.ipynb. This notebook includes dataset exploration, preprocessing, stratified train/validation splitting, augmentation examples, model training, model evaluation, and result visualization. The helper file cell_fixes.py contains supporting code used during the implementation process. The capstone_results/ directory contains saved benchmark results and figures used in the final report.
 
-# Repository Structure
-
-melanoma/
-  README.txt
-  002.zip
-  capstone_exploration.ipynb
-  capstone_proposal.pdf
-  cell_fixes.py
-  capstone_results/
-    arch_benchmark.pkl
-    arch_benchmark.png
-    augmentation_examples.png
-    class_distribution.png
-    sample_images.png
-
-# Dataset
+## Dataset
 
 The dataset archive is stored as 002.zip. The dataset contains dermoscopic lesion images organized into benign and malignant classes. In the final project, the dataset was split using a stratified train/validation procedure to avoid class imbalance issues in validation. The held-out test set contains 2,000 images, with 1,000 benign and 1,000 malignant examples.
 
-# How to Run the Project
+## How to Run the Project
 
 1. Clone the repository.
 
@@ -45,7 +30,7 @@ The dataset archive is stored as 002.zip. The dataset contains dermoscopic lesio
 
 6. Review the generated outputs in the capstone_results/ directory.
 
-# Main Files
+## Main Files
 
 capstone_exploration.ipynb:
 Main notebook for the project. It contains the data exploration, preprocessing, training, evaluation, and visualization workflow.
@@ -68,11 +53,11 @@ Class distribution figure used in the final report.
 capstone_results/sample_images.png:
 Sample dermoscopic images from the dataset.
 
-# Final Model Summary
+## Final Model Summary
 
 The strongest overall model in the final benchmark was ResNet-50. It achieved an AUC-ROC of 0.9800, accuracy of 0.9185, F1 score of 0.9154, and sensitivity of 0.9850 at 80% specificity on the balanced held-out test set.
 
-# Notes
+## Notes
 
 This project is intended as an academic machine learning prototype. It should not be used as a clinical diagnostic tool. Any real medical use would require additional validation, fairness analysis, clinical review, and regulatory approval.
 
