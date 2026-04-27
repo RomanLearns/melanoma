@@ -1,15 +1,12 @@
-# macOS
-.DS_Store
-
 # Local tooling / config
 .mcp.json
 
-# Dataset
+# Unzipped dataset (zip itself is tracked at the request of the team)
 002/
-002.zip
 
 # Trained model weights (too large for git)
-capstone_results/best_model.keras
+SRC/capstone_results/best_model.keras
 
-# Obsolete scratch notes
+# Obsolete scratch notes (do not re-create)
 cell_fixes.py
+SRC/cell_fixes.py
