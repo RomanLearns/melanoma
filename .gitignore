@@ -1,2 +1,15 @@
+# macOS
+.DS_Store
+
+# Local tooling / config
+.mcp.json
+
+# Dataset
 002/
+002.zip
+
+# Trained model weights (too large for git)
 capstone_results/best_model.keras
+
+# Obsolete scratch notes
+cell_fixes.py
